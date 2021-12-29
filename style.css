@@ -18,7 +18,9 @@ html {
 
 body {
     overflow-x: hidden;
+    /*overflow-y: hidden;*/
 }
+
 /* End of Common styles */
 
 /* Section 1 */
@@ -36,8 +38,9 @@ body {
     position: absolute;
     top: -125vw;
     left: calc(50% - 75vw);
-    border-radius:45%;
+    border-radius: 45%;
     animation: rotate 30s infinite;
+    max-height: 150vw;
 }
 
 .floating-bg::before {
@@ -48,7 +51,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius:40%;
+    border-radius: 40%;
     animation: rotate 30s infinite;
 }
 
@@ -59,7 +62,61 @@ body {
     100% {
         transform: rotate(360deg);
     }
-
-
 }
+
+.navbar {
+    position: relative;
+    z-index: 20;
+    top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-link {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: #FFF;
+    width: 1.5rem;
+    word-wrap: break-word;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.navbar-link:hover {
+    width: 15rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 2s;
+}
+
+.section-1-heading {
+    font-size: 8rem;
+    font-family: 'Monoton', cursive;
+    position: absolute;
+    top: 19vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0.3rem 0.3rem 0.3rem #888;
+    color: #FFF;
+    background-color: #FFF;
+    width: 85rem;
+    text-align: center;
+    padding: .8rem 1.6rem;
+    border-radius: 0.8rem;
+    opacity: 0.9;
+}
+
+.logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo i {
+    font-size: 15rem;
+    color: rgba(50, 231, 255, 0.8);
+    text-shadow: 0.1rem 0.1rem 0.2rem #DDD,-0.1rem -0.1rem 0.2rem #DDD;
+}
+
 /* End of Section 1 */
