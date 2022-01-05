@@ -16,9 +16,9 @@ html {
     font-size: 62.5%;
 }
 
-body {
+.container {
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
+    width: 100%;
 }
 
 .section-heading {
@@ -247,6 +247,7 @@ body {
 .team-member:first-child {
     align-self: flex-start;
 }
+
 .team-member:last-child {
     align-self: flex-end;
 }
@@ -279,7 +280,7 @@ body {
 }
 
 .projects-btn {
-    background-color:#FAB34A;
+    background-color: #FAB34A;
     color: #FFF;
     padding: 0.5rem 1.5rem;
     border-radius: 5rem;
@@ -343,9 +344,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* End of Section 3 */
-
-
 .story-paragraph {
     font-size: 1.8rem;
     color: #EEE;
@@ -353,3 +351,104 @@ body {
     letter-spacing: 0.1rem;
     text-indent: 2rem;
 }
+
+/* End of Section 3 */
+
+/* Section 4 */
+.section-4 {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-container {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #E5E9FF;
+    box-shadow: 0.3rem 0.3rem 0.4rem #CCC,
+    -0.1rem -0.1rem 0.4rem #CCC;
+    border-radius: 0.5rem;
+    perspective: 100rem;
+}
+
+
+.form-img {
+    width: 55rem;
+    background-color: rgba(50, 231, 255, 0.8);
+    padding: 5rem;
+    opacity: 0.8;
+    box-shadow: -3em 3rem 4rem #AAA;
+    border-radius: 0.5rem;
+    transform: rotateY(20deg);
+    transition: all 0.5s;
+}
+
+.form-img:hover {
+    transform: translateY(-2rem) rotateY(20deg);
+    box-shadow: -5rem 5rem 7rem #AAA;
+}
+
+.contact-form {
+    width: 45rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 3rem 3rem 4rem #AAA;
+    transform: rotateY(-20deg);
+    transition: all 0.5s;
+}
+
+.contact-form:hover {
+    transform: translateY(-2rem) rotateY(-20deg);
+    box-shadow: 5rem 5rem 7rem #AAA;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 0.1rem 0.1rem 0.2rem #DDD,
+                inset -0.1rem -0.1rem 0.2rem #DDD;
+}
+
+.contact-form textarea {
+    min-height: 10rem;
+    max-height: 15rem;
+    min-width: 70%;
+    max-width: 100%;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgba(50, 231,  255, 0.8);
+    color: #FFF;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #32E7FF;
+
+}
+
+.copyright {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #444;
+    margin-top: 5rem;
+}
+
+/* End of Section 4 */
